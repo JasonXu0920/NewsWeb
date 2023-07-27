@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class CreatesuperuserConfig(AppConfig):
+class NewswebConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'createsuperuser'
+    name = 'newsweb'
