@@ -1,6 +1,6 @@
 from django.contrib import admin
 from news.models import Author, Category, Article
-from forms import ArticleForm
+from news.forms import ArticleForm
 
 # Register your models here.
 @admin.register(Author)

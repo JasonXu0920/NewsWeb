@@ -1,0 +1,13 @@
+{%extends 'base.html'%}
+
+{%block content%}
+    {{ block.super}}
+
+    {% for article in articles%}
+        <div class="d-flex flex-column align-items-center p-5">
+                <h2><a href="{% url 'article' id=article.id%}">{{article.title}}</a></h2>
+                <p>{{ article.body|truncatewords:30}}</p>
+                <p>{{ article.author}}</p>
+        </div>
+    {% endfor %}
+{% endblock%}
