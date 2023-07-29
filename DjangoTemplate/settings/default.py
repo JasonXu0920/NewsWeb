@@ -138,6 +138,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
+#OpenAI Key
+OPEN_AI_KEY = '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'
+
 # Sentry variables
 ENABLE_SENTRY = os.environ.get("ENABLE_SENTRY", "TRUE").upper() == "TRUE"
 
